@@ -8,3 +8,7 @@ repository = "https://forge.cadoles.com.com/mlamalle/rest-zed-extension"
 license = "MIT"
 
 snippets = ["./snippets/http.json"]
+
+[grammars.http]
+repository = "https://github.com/rest-nvim/tree-sitter-http"
+rev = "db8b4398de90b6d0b6c780aba96aaa2cd8e9202c"

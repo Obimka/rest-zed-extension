@@ -31,9 +31,9 @@ the outline are activated.
 
 1. Install the converter somewhere on your `PATH` (or note its absolute path):
    ```sh
-   chmod +x zed-extension/scripts/http2curl.py
+   chmod +x ./scripts/http2curl.py
    # e.g. symlink it:
-   ln -s "$(pwd)/zed-extension/scripts/http2curl.py" ~/.local/bin/http2curl
+   ln -s "$(pwd)/scripts/http2curl.py" ~/.local/bin/http2curl
    ```
 
 2. Add tasks to your **global** Zed tasks file (`~/.config/zed/tasks.json` or open it via

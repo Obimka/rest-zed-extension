@@ -14,13 +14,13 @@ Content-Type: application/x-www-form-urlencoded
 @authToken = {{login.response.body.access_token}}
 ###
 
- 
+
 GET {{baseUrl}}/rest/v1?apiKey={{apikey}}
 accept: */*
 Authorization: Bearer {{authToken}}
 ###
 
- 
+
 GET {{baseUrl}}/rest/v1/etudiants?apiKey={{apikey}}
 accept: */*
 Authorization: Bearer {{authToken}}

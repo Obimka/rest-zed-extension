@@ -41,7 +41,7 @@ To **send** requests (Zed cannot do this natively):
 
 ```sh
 chmod +x ./scripts/http2curl.py
-ln -s "$(pwd)/rest-zed-extension/scripts/http2curl.py" ~/.local/bin/http2curl
+ln -s "$(pwd)/scripts/http2curl.py" ~/.local/bin/http2curl
 ```
 
 Verify:
