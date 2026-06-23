@@ -1,0 +1,10 @@
+id = "rest-client"
+name = "REST Client"
+version = "0.1.0"
+schema_version = 1
+authors = ["Matthieu Lamalle <mlamalle@cadoles.com>"]
+description = "HTTP request file language support (.http / .rest) with syntax highlighting and snippets. Ported from the VS Code REST Client extension."
+repository = "https://forge.cadoles.com.com/mlamalle/rest-zed-extension"
+license = "MIT"
+
+snippets = ["./snippets/http.json"]

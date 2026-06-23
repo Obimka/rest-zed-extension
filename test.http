@@ -1,0 +1,32 @@
+@baseUrl = https://dev.local
+@username =
+@password =
+@apikey =
+
+# Login
+# @name login
+
+POST https://idp.local/oauth/token?grant_type=client_credentials
+Authorization:  Basic {{username}}:{{password}}
+Content-Type: application/x-www-form-urlencoded
+
+###
+@authToken = {{login.response.body.access_token}}
+###
+
+ 
+GET {{baseUrl}}/rest/v1?apiKey={{apikey}}
+accept: */*
+Authorization: Bearer {{authToken}}
+###
+
+ 
+GET {{baseUrl}}/rest/v1/etudiants?apiKey={{apikey}}
+accept: */*
+Authorization: Bearer {{authToken}}
+###
+
+GET {{baseUrl}}/rest/v1/etudiants?nom=locke&apiKey={{apikey}}
+accept: */*
+Authorization: Bearer {{authToken}}
+###
