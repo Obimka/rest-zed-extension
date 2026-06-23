@@ -31,7 +31,7 @@ extension.
 
 ### The Zed extension
 
-In Zed: `zed: install dev extension` → select the `zed-extension/` folder.
+In Zed: `zed: install dev extension` → select the `rest-zed-extension/` folder.
 Then open a `.http` file: syntax highlighting, snippets, and
 the outline are activated.
 
@@ -40,8 +40,8 @@ the outline are activated.
 To **send** requests (Zed cannot do this natively):
 
 ```sh
-chmod +x zed-extension/scripts/http2curl.py
-ln -s "$(pwd)/zed-extension/scripts/http2curl.py" ~/.local/bin/http2curl
+chmod +x ./scripts/http2curl.py
+ln -s "$(pwd)/rest-zed-extension/scripts/http2curl.py" ~/.local/bin/http2curl
 ```
 
 Verify:

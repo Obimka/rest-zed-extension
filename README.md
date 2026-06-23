@@ -23,6 +23,12 @@ JSON/XML bodies, `###` separators) and emits/runs a `curl` command.
 
 ### Setup
 
+
+In Zed: `zed: install dev extension` → select the `rest-zed-extension/` folder.
+Then open a `.http` file: syntax highlighting, snippets, and
+the outline are activated.
+
+
 1. Install the converter somewhere on your `PATH` (or note its absolute path):
    ```sh
    chmod +x zed-extension/scripts/http2curl.py
